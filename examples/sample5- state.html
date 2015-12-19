@@ -1,0 +1,38 @@
+<html>
+  <head>
+      <title>React - Sample 4</title>
+        <script src="./react.js"></script>
+        <script src="./JSXTransformer.js"></script>
+  </head>
+  <body>
+      <p>React Samples</p>
+      
+      <div id="dynamicDiv">One</div>
+    
+      <script type="text/jsx">
+        /** @jsx React.DOM */
+      
+        var NewComp = React.createClass({
+            getInitialState: function() {
+                return {
+                    total : 400
+                }
+            
+            },
+            render: function() {
+                return (
+                    <h1>Total is {this.state.total}</h1>
+                );
+            }
+        });
+        
+        
+        React.render(
+            <NewComp/>,
+            document.getElementById('dynamicDiv')
+        );
+    
+      </script>
+      
+  </body>
+</html>

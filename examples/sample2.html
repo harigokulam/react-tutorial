@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>React - Sample 2</title>
+        <script src="./react.js"></script>
+        <script src="./JSXTransformer.js"></script>
+  </head>
+  <body>
+      <p>React Sample2</p>
+      
+      <div id="dynamicDiv">One</div>
+    
+      <script type="text/jsx">
+       
+        React.render(
+            
+            React.DOM.h1(null, 'Hello, Friends'),
+            document.getElementById('dynamicDiv')
+        );
+    
+      </script>
+      
+  </body>
+</html>

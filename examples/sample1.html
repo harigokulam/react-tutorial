@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>React - Sample 1</title>
+        <script src="./react.js"></script>
+        <script src="./JSXTransformer.js"></script>
+  </head>
+  <body>
+      <p>React Sample1</p>
+      
+      <div id="dynamicDiv">One</div>
+    
+      <script type="text/jsx">
+        /** @jsx React.DOM */
+        React.render(
+            <h1>Hello, UI Masters!</h1>,
+            document.getElementById('dynamicDiv')
+        );
+    
+      </script>
+      
+  </body>
+</html>
