@@ -1,2 +1,24 @@
+<!DOCTYPE html>
 <html>
+  <head>
+      <title>React - Sample 1</title>
+        <script src="../../examples/react.js"></script>
+        <script src="../../examples/JSXTransformer.js"></script>
+        <script type="text/jsx" src="grid.js">  </script>
+  </head>
+  <body>
+      <p>React Sample1</p>
+      
+      <div id="dynamicDiv">One</div>
+    
+      <script type="text/jsx">
+       
+        React.render(
+            <DataGrid />,
+            document.getElementById('dynamicDiv')
+        );
+    
+      </script>
+      
+  </body>
 </html>
